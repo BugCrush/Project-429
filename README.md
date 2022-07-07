@@ -1,9 +1,9 @@
-# Rapid-Chat - A Realtime Anonymous Communication Web App
+# Project - 429
 
 <p align="center"><img src="https://github.com/BugCrush/Project-429/blob/main/logo-transparent.png" width="400"></p>
 
-#### Rapid Chat is a web application that allows, virtually indefinite, users to send, virtually indefinite, messages in a chat room where they can choose to communicate via an anonymous alias. The application never keeps track of any previous communication in order to maintain true anonymity and privacy. Simply enter the chatroom, get a name and start chatting.
-#### Enter the skull session here: [Rapid-Chat](https://rapidchatapp.herokuapp.com/)
+#### This progress report outlines the challenges encountered by conventional registration booths set up by colleges / corporations during events for attendee detail collection and brings out the need for having simpler solutions such as Project 429, an idea that we, the developers, envision to be implemented out as a one-stop solution to eliminate all problem statements. A Near Field Communication (NFC) device creates a medium for small yet valuable information to traverse easily from device to device. Such small bits of information may be used in processing in payments, automatic storage of contacts, security alarms and many more. Project 429 makes use of this ‘medium’ and links hardware and software so as to create a well encrypted system only accessible by specific non-rewritable NFC tag owners that makes the process of registrations and payments fast as well as safe by omitting the probabilities of identity theft and unauthorised entries into events. The product capitalizes on the use of basic NFC tags to make things easier for registering people for various events. These tags contain the necessary information of an attendee so as to process information for payments and event registration that can be accessed by just scanning the assigned tag which is the form of a card (preferable), ring or a bracelet. At its maximum capacity, the ideals of a contact-less and digital technological environment are also viable.
+
 ---
 ### Tech Stack:
 
@@ -12,18 +12,24 @@
 * Javascript ES6
 * Bootstrap
 * Node.js
+* React.js
 * Nodemon
+* Netlify
+* Google Script
 * Express
-* Socket.io
+* Google Sheets
+* Google Sheets API
+* Java
 * Heroku
+* Arduino IDE
 ---
 ### Instructions:
 
-1. `git clone https://github.com/BugCrush/Rapid-Chat.git`
+1. `git clone https://github.com/BugCrush/Project-429.git`
 
     > clones the repository into your desired directory
 
-2. `cd Rapid-Chat`
+2. `cd Project-429`
 
     > takes your terminal into the root directory for further instructions
 
@@ -35,9 +41,9 @@
 
     > kickstarts the node server and starts running the website on the localhost under the hood
 
-5. Go to browser and visit "localhost:5000"
+5. Go to browser and visit "localhost:3000"
 
-    > the website, hosted on PORT 5000, is now visible for all changes made on the local machine
+    > the website, hosted on PORT 3000, is now visible for all changes made on the local machine
 ---
 ### Contributions:
 
