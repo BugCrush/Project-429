@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Project 429</title>
+    <style>
+        .logo{
+            filter: drop-shadow(4px 5px 10px #000000);
+        }
+        .cta{
+            box-shadow: 0px 4px black;
+            font-family: 'Inter', sans-serif;
+        }
+        .main{
+            height: 2050px;
+        }
+        .banner{
+            font-family: 'Hammersmith One', sans-serif;
+        }
+        .banner-detail{
+            z-index: 100;
+            position: absolute;
+        }
+        .banner-head{
+            -webkit-text-stroke: 2px #9932FF;
+        }
+        #particles-js{
+            background-color: black;
+            position: absolute;
+            background-image: url("");
+            background-repeat: no-repeat;
+            width: 100%;
+            z-index: 0;
+            filter: blur(3px);
+        }
+        .pevent{
+            text-shadow: rgba(214,148,247,0.9) 0px 0px 5px;
+            font-family: 'Hammersmith One', sans-serif;
+            -webkit-box-reflect: below -55px linear-gradient(transparent, transparent, transparent,white, white, white);
+        }
+        .arrowr {
+            width: 0; 
+            height: 0; 
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid #9540E9;
+        }
+        .arrowl {
+            width: 0; 
+            height: 0; 
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent; 
+            border-right:40px solid #9540E9; 
+        }
+        .eventimg {
+            width: 200px;
+            height: 250px;
+            box-shadow: 0 0 15px #B02EFF;
+        }.clientimg {
+            width: 300px;
+            height: 250px;
+            box-shadow: 0 0 15px #B02EFF;
+        }
+        .event-name, .event-date, .event-type, .find-head{
+            font-family: 'Hammersmith One', sans-serif;
+        }
+        .find{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            background-image: url('./footer-background.png');
+            height: 210px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-[#454545] flex justify-between">
+        <ul class="flex justify-start pl-40 py-5 ">
+            <li><img src="../logo-transparent.png" alt="logo" class="w-36 logo"></li>
+        </ul>
+        <ul class="flex py-9 justify-between space-x-11">
+            <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-[#DE46F6]">EVENT LIST</li>
+            <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-[#DE46F6]">MOBILE APP</li>
+            <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-[#DE46F6]">DOCUMENTATION</li>
+        </ul>
+        <ul class="flex py-8 pr-40">
+            <li class="cta font-sans transition ease-linear delay-150 cursor-pointer font-bold text-white bg-black px-4 py-1 rounded-lg border-[#8A03DC] border-4 hover:border-[#ad29ff]">Create New Event</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main bg-gradient-to-b from-[#454545] to-black">
+            <div class="banner h-96 bg-black">
+                <div class="banner-detail pl-60 pt-20">
+                    <p class="banner-head text-white text-[60px]">MUJ: Oneiros 22'</p>
+                    <p class="banner-desc text-white text-[21px]">12<sub>TH</sub> JUNE, 2022 | 5:00 PM to 10:00 PM | PAID</p>
+                    <div class="cta transition ease-linear delay-150 cursor-pointer font-bold text-white bg-black px-4 py-1 rounded-lg border-[#8A03DC] border-4 hover:border-[#ad29ff] w-fit mt-5">Check Real-time Participation</div>
+                </div>
+                <div class="particles h-96" id="particles-js"></div>
+            </div>
+
+            <div class="pastevents px-60 pt-28">
+                <p class="pevent text-[#BE33FF] text-[60px] text-center ">PAST EVENTS</p>
+                <div class="event-grid flex justify-between mt-20">
+                    <div class="arrowl mt-20"></div>
+                    <div class="events flex justify-between space-x-14">
+                        <div class="event">
+                            <img src="./event.jpg" alt="event" class="eventimg rounded-2xl border-[#AB24FE] border-2">
+                            <p class="event-name text-[20px] text-white ml-3 mt-3">MUJ: ONEIROS 19'</p>
+                            <p class="event-date text-[16px] text-white ml-3">10th June, 2019</p>
+                            <p class="event-type text-[16px] text-white ml-3">Paid</p>
+                        </div>
+                        <div class="event">
+                            <img src="./event.jpg" alt="event" class="eventimg rounded-2xl border-[#AB24FE] border-2">
+                            <p class="event-name text-[20px] text-white ml-3 mt-3">MUJ: ONEIROS 20'</p>
+                            <p class="event-date text-[16px] text-white ml-3">11th June, 2020</p>
+                            <p class="event-type text-[16px] text-white ml-3">Paid</p>
+                        </div>
+                        <div class="event">
+                            <img src="./event.jpg" alt="event" class="eventimg rounded-2xl border-[#AB24FE] border-2">
+                            <p class="event-name text-[20px] text-white ml-3 mt-3">MUJ: ONEIROS 21'</p>
+                            <p class="event-date text-[16px] text-white ml-3">9th June, 2021</p>
+                            <p class="event-type text-[16px] text-white ml-3">Paid</p>
+                        </div>
+                    </div>
+                    <div class="arrowr mt-20"></div>
+                </div>
+            </div>
+
+            <div class="pastevents px-60 pt-[100px]">
+                <p class="pevent text-[#BE33FF] text-[60px] text-center ">CLIENTELE</p>
+                <div class="event-grid flex justify-between mt-20">
+                    <div class="arrowl mt-20"></div>
+                    <div class="events flex justify-between space-x-14">
+                        <div class="event">
+                            <img src="./event.jpg" alt="event" class="clientimg rounded-2xl border-[#AB24FE] border-2">
+                            <p class="event-name text-[20px] text-white mt-3 text-center">MUJ: RAJASTHAN</p>
+                        </div>
+                        <div class="event">
+                            <img src="./event.jpg" alt="event" class="clientimg rounded-2xl border-[#AB24FE] border-2">
+                            <p class="event-name text-[20px] text-white mt-3 text-center">MIT: KARNATAKA</p>
+                        </div>
+                    </div>
+                    <div class="arrowr mt-20"></div>
+                </div>
+            </div>
+
+            <div class="find pt-[120px] px-60 flex-col content-center">
+                <p class="find-head text-[60px] text-center text-[#BE33FF]">Find Event/Client/Attendee...</p>
+                <div class="sbar flex justify-between mt-7 px-5 py-2 bg-[#606060] rounded-2xl w-[400px]">
+                    <input placeholder="type your query here..." class="enter text-[#898989] bg-[#00000090] rounded-lg pl-2 pr-7 py-2 text-left">
+                    <div class="sbtn text-[#D6D6D6] bg-black px-7 py-2 rounded-lg">SEARCH</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class=" flex justify-between">
+            <ul class="flex justify-start pl-40 py-5 mt-28">
+                <li><img src="../logo-transparent.png" alt="logo" class="w-36 logo"></li>
+            </ul>
+            <ul class="flex py-9 justify-between space-x-11 mt-28">
+                <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-black">EVENT LIST</li>
+                <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-black">MOBILE APP</li>
+                <li class="font-sans transition ease-in-out delay-150 cursor-pointer text-white hover:text-black">DOCUMENTATION</li>
+            </ul>
+            <ul class="flex py-8 pr-40 mt-28">
+                <li class="cta font-sans transition ease-linear delay-150 cursor-pointer font-bold text-white bg-black px-4 py-1 rounded-lg border-[#8A03DC] border-4 hover:border-white">Log Out</li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
