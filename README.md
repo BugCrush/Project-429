@@ -10,7 +10,7 @@
 * HTML5
 * CSS3
 * Javascript ES6
-* Bootstrap
+* Tailwind CSS
 * Node.js
 * React.js
 * Nodemon
